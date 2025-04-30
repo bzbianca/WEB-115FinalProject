@@ -1,0 +1,19 @@
+.title {
+   text-align: center;
+}
+
+#form {
+    justify-items: center;
+}
+
+#taskmanager {
+    justify-items: center;
+}
+
+th {
+    width: 100px;
+}
+
+td {
+    width: 25px;
+}

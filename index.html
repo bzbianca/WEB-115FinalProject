@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
-    <form>
-    <p>Task Name:</p>
-    <input id="taskName">
-    <p>Task Priority</p>
-    <input id="priority">
-    <input type="checkbox" id="important">Important?</input>
-    <br><br><br>
-    <input type="button" id="submit"></input>
-    <div id="taskmanager"></div>
+    <h1 class="title">Task Manager</h1>
+    <form id="form">
+        <input id="taskName" placeholder="Enter Task Name">
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+        <input type="checkbox" id="important">Important</input>
+        <button type="button" id="submit">Add Task</Button></button>
+        <br><br>
+        <p>--------------------------------------------------------------------------------------------------------</p>
+        <br>
+        <div id="taskmanager">
+            <table id="taskTable">
+                <th>Name</th>
+                <th>Priority</th>
+                <th>Date</th>
+                <th>Options</th>
+            </table>
+        </div>
     </form>
 </body>
 </html>
