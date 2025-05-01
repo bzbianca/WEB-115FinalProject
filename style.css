@@ -7,11 +7,13 @@
 }
 
 #taskmanager {
+    background-color: lightgray;
     justify-items: center;
 }
 
 th {
     width: 100px;
+    background-color: lightblue;
 }
 
 td {
