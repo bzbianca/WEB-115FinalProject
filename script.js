@@ -83,6 +83,7 @@ submit.addEventListener("click", function(){
 
     let deleteButton = document.createElement("button")
     deleteButton.type = "button"
+    deleteButton.id = id
     deleteButton.innerHTML = "Delete"
     makeOptions.appendChild(deleteButton)
     newTask.appendChild(makeOptions)
@@ -108,12 +109,6 @@ submit.addEventListener("click", function(){
     // if the delete button is clicked on specific task
     deleteButton.addEventListener("click", function(){
         document.getElementById(newTask.id).remove()
-        // console.log(tasks.indexOf(newTask.id))
-        // for (let i = 0; i <= tasks.length; i++) {
-        //     if (i == tasks[i]) {
-
-        //     }
-        // }
         console.log(tasks)
     })
 
@@ -121,7 +116,3 @@ submit.addEventListener("click", function(){
 
     console.log(JSON.stringify(tasks)); // print objects array in console
 })
-
-// add removing task object from list
-
-// make sure to do readme file
